@@ -1,0 +1,379 @@
+/* Global Selectors */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-size: 2rem;
+}
+
+img {
+    width: 35%;
+    max-width: 40%;
+    height: auto;
+}
+
+section.background {
+    text-align: center;
+    padding-left: 400px;
+    
+} 
+
+ /* section {
+    padding-left: 400px;
+    text-align: center;
+} */
+
+body {
+background-image: url(imgs/sitebg.jpg);
+}
+
+
+
+/* Header Selectors */
+
+header {
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.container {
+    width: 100%;
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255,255,255,.4);
+}
+
+nav-logo {
+    width: 2rem;
+}
+
+.menu-icons i{
+    font-size: 4rem;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+.close i{
+    color: #eb648c;
+}
+
+.nav-list {
+    width: 25rem;
+    height: 100vh;
+    background-color: #d7d4ed;
+    position: fixed;
+    top: 0;
+    right: -25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 15;
+    transition: all 500ms ease-in-out;
+}
+
+.nav-list.active{
+    right: 0;
+}
+
+.close {
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+}
+
+.nav-item {
+    margin: 2rem 0;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: rgba(0,0,0,.7);
+}
+
+/* Background Image */
+.background {
+    width: 100%;
+    height: 80%;
+    background: url("imgs/sitebg.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Main Text for Home Page*/
+.main-message {
+    width: 100%;
+    max-width: 50rem;
+    color: #fafafa;
+    text-transform: uppercase;
+    transform: translateY(110%);
+}
+
+.main-message h3 {
+    font-size: 1.6rem
+}
+
+.main-message h1 {
+    font-size: 4rem;
+    margin: 1rem 0;
+}
+
+/* Main Text for About Page*/
+ .about-title {
+    width: 100%;
+    height: 80%vh;
+    max-width: 50rem;
+    color: #fafafa;
+    text-transform: uppercase;
+    transform: translateY(20%);
+ }
+
+.about-title h3 {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.about-title h1 {
+    font-size: 4rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.about-title p {
+    margin: 2rem;
+}
+
+.about-text{
+    background-color: transparent;
+}
+
+/* Profile/About me Image*/
+img#profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 15%;
+    border: 3px solid orange;
+    margin-left: 0rem;
+    text-align: center;
+} 
+
+div#profile-pic {
+    text-align: center;
+}
+
+section.about-text {
+    padding-left: 400px;
+}
+
+/* 
+.about-text {  
+    width: 100%;
+    height: 80%vh;
+}
+
+.about-title{
+    width: 100%;
+    color: #fafafa;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: (-50%, -50%);
+    text-align: center;
+}
+
+.about-para {
+    padding: 0 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.profile-pic img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    border: 3px solid;
+}  */
+
+
+
+
+
+/* Blog Styling*/
+.blog-box {
+    transform: translateY(20%);
+}
+
+.blog-date{
+    text-align: right;
+    font-size: 1rem;
+}
+
+#blog h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 12rem;
+    color: #fafafa;
+
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    color: #fafafa;
+}
+
+.flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 1.6rem;
+}
+
+.blog-box {
+    box-shadow: 10px 100px 100px 10px rgba(255, 255, 0, 0.3);
+    margin-bottom: 2rem;
+    border: 2px solid yellow ;
+    width: 100%
+}
+
+img {
+    padding: 0 1px;
+}
+
+.box  {
+    padding: 0 10px;
+    color: #fafafa;
+}
+
+div.blog-box {
+    text-align: center;
+}
+
+/* Contact Styling */
+.social-media i {
+    font-size: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+  }
+  
+  .social-media a {
+    color: #fafafa;
+  }
+  
+  .social-media a:hover {
+    color: orange;
+  }
+
+.social-media li {
+    display: inline;
+    margin: 1rem;
+    flex-direction: column;
+    
+}
+
+.contact-box .social-media{
+    text-align: center; 
+    margin-bottom: 1rem;
+    border: 2px solid yellow ;
+    margin-top: 0px;
+    width: 25%;
+    margin-left: 500px;
+    /*margin-right: 400px; */
+    
+}
+
+ul.socialmedia {
+    text-align: center;
+}
+
+#contact-text h2{
+    font-size: 3rem;
+    margin-bottom: 15px;
+    margin-top: 100px;
+    transform: translateY(2%);
+}
+
+
+/* Mario Styling */
+#mario img {
+    margin-top: 120px;
+    text-align: left;
+    width: 100%;
+    margin-left: 400px;
+}
+
+/* Media Breaks */
+
+
+@media only screen and (max-width: 1024px){
+    .contact-box .social-media {
+        margin-left: 275px;
+    }
+
+    section.about-text {
+        padding-left: 125px;
+    }
+
+    section.background {
+        text-align: center;
+        padding-left: 125px;
+        
+    }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 666px){
+    .contact-box .social-media {
+        margin-left: 0px;
+    }
+
+    section.about-text {
+        padding-left: 0px;
+    }
+
+    section.background {
+        text-align: center;
+        padding-left: 0px;
+        
+    } 
+
+}
+
